@@ -22,3 +22,4 @@ Ubuntu based Developer Machine
 - atom
 - keepassx
 - chrome
+- slack

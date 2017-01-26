@@ -1,3 +1,4 @@
 install_atom: true
 install_keepassx: true
 install_chrome: true
+install_slack: true
