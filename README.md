@@ -13,4 +13,6 @@ Ubuntu based Developer Machine
 
 - ansible
 - vagrant
+- nvm
 - drush
+- mysql-client
