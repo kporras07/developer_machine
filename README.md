@@ -11,6 +11,7 @@ Ubuntu based Developer Machine
 
 ## Includes:
 
+- git
 - ansible
 - vagrant
 - nvm

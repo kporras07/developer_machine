@@ -13,6 +13,7 @@
 
   roles:
     # Essential roles.
+    - geerlingguy.git
     - dwcramer.ansible
     - andrewrothstein.vagrant
     - gvillalta99.nvm
