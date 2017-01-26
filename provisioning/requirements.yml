@@ -1,4 +1,5 @@
 ---
 - src: dwcramer.ansible
 - src: andrewrothstein.vagrant
+- src: gvillalta99.nvm
 - src: geerlingguy.drush
