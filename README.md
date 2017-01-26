@@ -9,6 +9,10 @@ Ubuntu based Developer Machine
 - Copy custom.config.yml to config.yml and replace necessary values
 - Your system should have python-netaddr installed (`sudo apt-get install python-netaddr`)
 
+## Use
+
+- `ansible-playbook -i hosts provisioning/playbook.yml`
+
 ## Includes:
 
 - git
