@@ -1,3 +1,4 @@
 ---
-- src: geerlingguy.drush
 - src: dwcramer.ansible
+- src: andrewrothstein.vagrant
+- src: geerlingguy.drush

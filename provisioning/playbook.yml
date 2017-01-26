@@ -14,4 +14,5 @@
   roles:
     # Essential roles.
     - dwcramer.ansible
+    - andrewrothstein.vagrant
     - geerlingguy.drush

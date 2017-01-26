@@ -12,4 +12,5 @@ Ubuntu based Developer Machine
 ## Includes:
 
 - ansible
+- vagrant
 - drush
