@@ -23,3 +23,4 @@ Ubuntu based Developer Machine
 - keepassx
 - chrome
 - slack
+- dropbox
