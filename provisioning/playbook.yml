@@ -21,3 +21,4 @@
     - altermn.rvm
     - geerlingguy.drush
     - { role: trozz.atom, when: install_atom == true }
+    - { role: wtanaka.keepassx, when: install_keepassx == true }

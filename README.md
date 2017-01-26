@@ -20,3 +20,4 @@ Ubuntu based Developer Machine
 - drush
 - mysql-client
 - atom
+- keepassx
