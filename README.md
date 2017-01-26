@@ -25,3 +25,7 @@ Ubuntu based Developer Machine
 - slack
 - dropbox
 - spotify
+
+## TODO:
+
+- terminus
