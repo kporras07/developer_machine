@@ -3,3 +3,4 @@ install_keepassx: true
 install_chrome: true
 install_slack: true
 install_dropbox: true
+install_spotify: true

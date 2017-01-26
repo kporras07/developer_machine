@@ -25,3 +25,4 @@
     - { role: wtanaka.chrome, when: install_chrome == true }
     - { role: wtanaka.slack, when: install_slack == true }
     - { role: wtanaka.dropbox, when: install_dropbox == true }
+    - { role: iknite.spotify, when: install_spotify == true }

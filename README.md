@@ -24,3 +24,4 @@ Ubuntu based Developer Machine
 - chrome
 - slack
 - dropbox
+- spotify
