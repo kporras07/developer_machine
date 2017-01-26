@@ -16,6 +16,7 @@
     - geerlingguy.git
     - dwcramer.ansible
     - andrewrothstein.vagrant
+    - wtanaka.virtualbox
     - gvillalta99.nvm
     - altermn.rvm
     - geerlingguy.drush

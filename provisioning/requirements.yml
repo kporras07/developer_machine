@@ -2,6 +2,7 @@
 - src: geerlingguy.git
 - src: dwcramer.ansible
 - src: andrewrothstein.vagrant
+- src: wtanaka.virtualbox
 - src: gvillalta99.nvm
 - src: altermn.rvm
 - src: geerlingguy.drush

@@ -14,6 +14,7 @@ Ubuntu based Developer Machine
 - git
 - ansible
 - vagrant
+- virtualbox
 - nvm
 - rvm
 - drush
