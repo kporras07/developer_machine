@@ -2,4 +2,6 @@
 - src: dwcramer.ansible
 - src: andrewrothstein.vagrant
 - src: gvillalta99.nvm
+- src: altermn.rvm
 - src: geerlingguy.drush
+- src: trozz.atom

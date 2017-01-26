@@ -10,3 +10,4 @@
     - python-pycurl
     - build-essential
     - zip
+    - libgnome-keyring-dev
