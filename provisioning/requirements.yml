@@ -8,3 +8,4 @@
 - src: geerlingguy.drush
 - src: trozz.atom
 - src: wtanaka.keepassx
+- src: wtanaka.chrome

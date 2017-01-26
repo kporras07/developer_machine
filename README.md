@@ -21,3 +21,4 @@ Ubuntu based Developer Machine
 - mysql-client
 - atom
 - keepassx
+- chrome
