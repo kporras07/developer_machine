@@ -1,0 +1,8 @@
+# Config file.
+config.yml
+
+# Hosts file.
+hosts
+
+# Retry files.
+provisioning/*.retry
