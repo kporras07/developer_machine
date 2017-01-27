@@ -7,7 +7,7 @@
 - src: altermn.rvm
 - src: geerlingguy.drush
 - src: kporras07.terminus
-- src: trozz.atom
+- src: Trozz.atom
 - src: wtanaka.keepassx
 - src: wtanaka.chrome
 - src: wtanaka.slack
