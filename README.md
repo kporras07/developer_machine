@@ -22,6 +22,7 @@ Ubuntu based Developer Machine
 - nvm
 - rvm
 - drush
+- terminus
 - mysql-client
 - atom
 - keepassx
@@ -29,7 +30,3 @@ Ubuntu based Developer Machine
 - slack
 - dropbox
 - spotify
-
-## TODO:
-
-- terminus

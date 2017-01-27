@@ -20,6 +20,7 @@
     - gvillalta99.nvm
     - altermn.rvm
     - geerlingguy.drush
+    - kporras07.terminus
     - { role: trozz.atom, when: install_atom == true }
     - { role: wtanaka.keepassx, when: install_keepassx == true }
     - { role: wtanaka.chrome, when: install_chrome == true }
