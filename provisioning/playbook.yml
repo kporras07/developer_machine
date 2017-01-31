@@ -18,7 +18,7 @@
     - andrewrothstein.vagrant
     - wtanaka.virtualbox
     - { role: gvillalta99.nvm, when: install_node }
-    - altermn.rvm
+    - { role: altermn.rvm, when: install_ruby }
     - geerlingguy.drush
     - { role: kporras07.terminus, become: no }
     - { role: Trozz.atom, when: install_atom }
