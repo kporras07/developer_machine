@@ -11,3 +11,6 @@
     - build-essential
     - zip
     - libgnome-keyring-dev
+
+- name: Add repository for PHP
+  apt_repository: repo='ppa:ondrej/php'
