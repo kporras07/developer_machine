@@ -17,7 +17,7 @@
     - dwcramer.ansible
     - andrewrothstein.vagrant
     - wtanaka.virtualbox
-    - gvillalta99.nvm
+    - { role: gvillalta99.nvm, when: install_node }
     - altermn.rvm
     - geerlingguy.drush
     - { role: kporras07.terminus, become: no }
