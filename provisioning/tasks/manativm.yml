@@ -1,0 +1,14 @@
+---
+
+- name: Ensure destination folder exists.
+  file:
+    dest: /home/cursosci/ci/development
+    state: directory
+    owner: cursosci
+  become: no
+
+- name: Clone repo.
+  git:
+    repo: https://github.com/ManatiCR/manati-vm.git
+    dest: /home/cursosci/development/manati-vm
+  become: no

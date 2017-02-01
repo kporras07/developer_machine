@@ -27,3 +27,7 @@
     - { role: wtanaka.slack, when: install_slack }
     - { role: wtanaka.dropbox, when: install_dropbox }
     - { role: iknite.spotify, when: install_spotify }
+
+  tasks:
+    - include: tasks/manativm.yml
+      when: manativm
