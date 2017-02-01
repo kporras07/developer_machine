@@ -29,5 +29,6 @@
     - { role: iknite.spotify, when: install_spotify }
 
   tasks:
+    - include: tasks/extras.yml
     - include: tasks/manativm.yml
       when: manativm
