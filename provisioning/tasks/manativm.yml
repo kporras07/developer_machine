@@ -7,8 +7,17 @@
     owner: cursosci
   become: no
 
+- name: Install ansible roles
+  command: ansible-galaxy install -r provisioning/requirements.yml --force
+  become: yes
+
+- name: Install vagrant plugins
+  command: vagrant plugin install vagrant-hostsupdater
+  become: no
+
 - name: Clone repo.
   git:
     repo: https://github.com/ManatiCR/manati-vm.git
     dest: /home/cursosci/development/manati-vm
+    accept_hostkey: yes
   become: no
