@@ -6,6 +6,7 @@ install_dropbox: true
 install_spotify: true
 install_node: true
 install_ruby: true
+install_virtualbox: true
 
 # PHP configuration.
 php_packages:

@@ -16,7 +16,7 @@
     - geerlingguy.git
     - dwcramer.ansible
     - andrewrothstein.vagrant
-    - wtanaka.virtualbox
+    - { role: wtanaka.virtualbox, when: install_virtualbox }
     - { role: gvillalta99.nvm, when: install_node }
     - { role: altermn.rvm, when: install_ruby }
     - geerlingguy.drush
