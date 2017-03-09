@@ -11,16 +11,6 @@ env:
     init: /sbin/init
     run_opts: ""
     docker_image: "geerlingguy/docker-ubuntu1404-ansible:latest"
-  - distro: mintserena
-    init: /lib/systemd/systemd
-    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    docker_image: "docker pull vcatechnology/linux-mint:18.1"
-  - distro: mintrosa
-    init: /sbin/init
-    run_opts: ""
-    docker_image: "docker pull vcatechnology/linux-mint:17.3"
-
-  # Test older versions of Solr / OSes.
 
 before_install:
   # Pull container.
