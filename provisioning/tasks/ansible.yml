@@ -1,0 +1,17 @@
+---
+# tasks file for ansible (Ubuntu specific)
+
+- name: Install Ansible PPA key
+  apt_key: >
+    id=6125E2A8C77F2818FB7BD15B93C4A3FD7BB9C367
+    keyserver=keyserver.ubuntu.com
+    state=present
+
+- name: Install Ansible PPA
+  apt_repository: >
+    repo='ppa:ansible/ansible'
+    state=present
+    codename={{ distro_codename }}
+
+- name: Install Ansible packages
+  apt: name='ansible' state=present update_cache=yes

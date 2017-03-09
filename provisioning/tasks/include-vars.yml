@@ -1,0 +1,9 @@
+---
+- name: Include codename var.
+  include_vars: "{{ ansible_distribution_release }}.yml"
+  when: (ansible_distribution == "Ubuntu" and ansible_distribution_release == "qiana") or
+        (ansible_distribution == "Ubuntu" and ansible_distribution_release == "rebecca") or
+        (ansible_distribution == "Ubuntu" and ansible_distribution_release == "rafaela") or
+        (ansible_distribution == "Ubuntu" and ansible_distribution_release == "rosa") or
+        (ansible_distribution == "Ubuntu" and ansible_distribution_release == "sarah") or
+        (ansible_distribution == "Ubuntu" and ansible_distribution_release == "serena")

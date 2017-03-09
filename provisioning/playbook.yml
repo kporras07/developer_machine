@@ -9,12 +9,13 @@
   gather_facts: False
   pre_tasks:
     - include: tasks/init.yml
+    - include: tasks/include-vars.yml
     - include: tasks/init-debian.yml
+    - include: tasks/ansible.yml
 
   roles:
     # Essential roles.
     - geerlingguy.git
-    - dwcramer.ansible
     - andrewrothstein.vagrant
     - { role: wtanaka.virtualbox, when: install_virtualbox }
     - { role: gvillalta99.nvm, when: install_node }

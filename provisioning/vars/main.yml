@@ -26,3 +26,5 @@ rvm_install_type: 'user'
 extra_packages:
   - mysql-client
   - nfs-kernel-server
+
+distro_codename: "{{ ansible_distribution_release }}"

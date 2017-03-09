@@ -13,4 +13,7 @@
     - libgnome-keyring-dev
 
 - name: Add repository for PHP
-  apt_repository: repo='ppa:ondrej/php'
+  apt_repository:
+    repo='ppa:ondrej/php'
+    state=present
+    codename={{ distro_codename }}
