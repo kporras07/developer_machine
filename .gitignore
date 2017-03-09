@@ -1,5 +1,6 @@
 # Config file.
 config.yml
+!tests/config.yml
 
 # Hosts file.
 hosts

@@ -12,6 +12,7 @@
     - include: tasks/include-vars.yml
     - include: tasks/init-debian.yml
     - include: tasks/ansible.yml
+      when: install_ansible
 
   roles:
     # Essential roles.

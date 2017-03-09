@@ -7,7 +7,7 @@ install_spotify: true
 install_node: true
 install_ruby: true
 install_virtualbox: true
-install_ansible: true
+install_ansible: false
 manativm: false
 
 # PHP configuration.

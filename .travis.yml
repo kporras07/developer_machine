@@ -28,6 +28,7 @@ before_install:
 
 script:
   - container_id=$(mktemp)
+  - cp tests/config.yml config.yml
   # Run container in detached state.
   - 'docker run --detach --volume="${PWD}":/root/developer_machine:rw ${run_opts} ${docker_image} "${init}" > "${container_id}"'
 
