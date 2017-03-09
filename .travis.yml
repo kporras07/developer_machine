@@ -1,0 +1,50 @@
+---
+services: docker
+
+env:
+  # Test on ubuntu and mint OSes.
+  - distro: ubuntu1604
+    init: /lib/systemd/systemd
+    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+    docker_image: "geerlingguy/docker-ubuntu1604-ansible:latest"
+  - distro: ubuntu1404
+    init: /sbin/init
+    run_opts: ""
+    docker_image: "geerlingguy/docker-ubuntu1404-ansible:latest"
+  - distro: mintserena
+    init: /lib/systemd/systemd
+    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+    docker_image: "docker pull vcatechnology/linux-mint:18.1"
+  - distro: mintrosa
+    init: /sbin/init
+    run_opts: ""
+    docker_image: "docker pull vcatechnology/linux-mint:17.3"
+
+  # Test older versions of Solr / OSes.
+
+before_install:
+  # Pull container.
+  - 'docker pull ${docker_image}'
+
+script:
+  - container_id=$(mktemp)
+  # Run container in detached state.
+  - 'docker run --detach --volume="${PWD}":/root/developer_machine:rw ${run_opts} ${docker_image} "${init}" > "${container_id}"'
+
+  # Install dependencies.
+  - 'docker exec "$(cat ${container_id})" ansible-galaxy install -r /root/developer_machine/provisioning/requirements.yml'
+
+  # Ansible syntax check.
+  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm ansible-playbook /root/developer_machine/provisioning/playbook.yml --syntax-check'
+
+  # Test role.
+  - 'docker exec "$(cat ${container_id})" env TERM=xterm ansible-playbook /root/developer_machine/provisioning/playbook.yml'
+
+  # Test role idempotence.
+  - idempotence=$(mktemp)
+  - docker exec "$(cat ${container_id})" ansible-playbook /root/developer_machine/provisioning/playbook.yml | tee -a {idempotence}
+  - >
+    tail ${idempotence}
+    | grep -q 'changed=0.*failed=0'
+    && (echo 'Idempotence test: pass' && exit 0)
+    || (echo 'Idempotence test: fail' && exit 1)
