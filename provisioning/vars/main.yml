@@ -20,7 +20,7 @@ nvm:
     - bower
   path: "~/.nvm"
   profile_file: "~/.bashrc"
-  version: 'v0.20.0'
+  version: 'v0.33.8'
 rvm_install_type: 'user'
 extra_packages:
   - mysql-client
