@@ -6,6 +6,7 @@ vagrant_version: '2.0.1'
 vagrant_pkg_suffix: 'deb'
 nvm:
   default_node_version: "6"
+  node_version: "6"
   dependencies:
     apt:
       - git
