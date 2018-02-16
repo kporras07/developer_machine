@@ -14,7 +14,6 @@ nvm:
       - libssl-dev
   node_versions:
     - '6'
-    - '8'
   packages:
     - grunt-cli
     - gulp-cli
