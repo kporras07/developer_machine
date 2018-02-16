@@ -15,10 +15,7 @@ nvm:
       - libssl-dev
   node_versions:
     - '6'
-  packages:
-    - grunt-cli
-    - gulp-cli
-    - bower
+  packages: []
   path: "~/.nvm"
   profile_file: "~/.bashrc"
   version: 'v0.33.8'
